@@ -1,0 +1,75 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- build:js scripts/vendor/modernizr.js -->
+        <script src="components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
+    </head>
+    <body>
+        <br>
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span2">
+                    <div class="sidebar-nav">
+                        <button class="compose btn">New</button>
+                        <br><br>
+                        <ul id="folders" class="nav">
+                            <li class="folder-item">trash</li>
+                            <li class="folder-item">inpos</li>
+                            <li class="folder-item">folao</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="span10" id="feedpanel">
+                    <div id="feedctrl" class="btn-toolbar" style="margin: 0 0 13px;">
+                        <div class="btn-group">
+                            <button class="btn"><i class="icon-tag"></i>Tags</button>
+                            <button class="btn"><i class="icon-flag"></i>Flag feed</button>
+                            <button class="btn"><i class="btn-feed"></i>Forward</button>
+                            <button class="btn"><i class="btn-feed"></i>Share</button>
+                        </div>
+                    </div>
+                    <table class="table table-hover" id="feedtable">
+                        <tbody id="feed_items_tb">
+                            <tr class="feed-item">
+                                <td class="span1"></td>
+                                <td class="span2"><b>Soundcloud</b></td>
+                                <td class="span8"><span class="subject">Lorem ipsum.</span><span class="messagepreview">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam tempora sit quis?</span></td>
+                            </tr>
+                            <tr class="feed-item">
+                                <td class="span1"><span class="label label-important">JEE</span></td>
+                                <td class="span2"><b>Pahkasika</b></td>
+                                <td class="span8"><span class="subject label label-information"></span> <span class="messagepreview">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima ratione.</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+
+        <!-- build:js scripts/main.js -->
+        <script data-main="scripts/main" src="components/requirejs/require.js"></script>
+        <!-- endbuild -->
+    </body>
+</html>
